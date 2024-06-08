@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let y = 0; 
+        let cantidad1 = 0;
+        let cantidad2 = 0;
+        while (y < 10) {
+            let calificacion;
+            calificacion = parseInt(prompt('Ingrese nota'));
+            if (calificacion >= 7) {
+                cantidad1 = cantidad1 + 1;
+            } else {
+                cantidad2 = cantidad2 + 1;
+            }
+            y = y + 1;
+        }
+        document.write('Cantidad de estudiantes con notas mayores o iguales a 7:' + cantidad1);
+        document.write('<br>');
+        document.write('Cantidad de estudiantes con notas menores a 7:' + cantidad2);
+    </script>
+</body>
+</html>

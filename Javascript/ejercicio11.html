@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra;
+        palabra = prompt('Ingrese alguna de estas palabras (amor, mesa, fiesta, gato) para traducirlas al ingles');
+        switch (palabra) {
+            case 'amor':
+                document.write('love');
+                break;
+            case 'mesa':
+                document.write('table');
+                break;
+            case 'fiesta':
+                document.write('party');
+                break;
+            case 'gato':
+                document.write('cat');
+                break;
+            default:
+                document.write('Solo puedo traducir (amor, mesa, fiesta, gato)');
+                break;
+        }
+    </script>
+</body>
+</html>

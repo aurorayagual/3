@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cantidad;
+        let suma = 0;
+        do {
+            cantidad = parseInt(prompt('Ingrese una cantidad (9999 para finalizar)'));
+            if (cantidad != 9999) {
+                suma = suma + cantidad;
+            }
+        } while (cantidad != 9999);
+        document.write('cantidad acumulada total:' + suma);
+        document.write('<br>');
+        if (suma > 0) {
+            document.write('la cantidad acumulada es mayor a cero');
+        } else {
+            if (suma == 0) {
+                document.write('la cantidad acumulada es cero');
+            } else {
+                document.write('la cantidad acumulada es menor a cero');
+            }
+        }
+    </script>
+</body>
+</html>
